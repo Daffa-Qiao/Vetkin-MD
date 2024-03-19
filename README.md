@@ -2,10 +2,11 @@
 
 <p align="center">
 
-<img src="https://i.ibb.co/sHv87rB/favicon.png" alt="ALPHA" width="200"/>
+<img src="./image/hd.jpg" alt="ALPHA" width="200"/>
 </p>
 
-> **Note**: Saya menggunakan 2 api key yang pertama itu dari Zeeone (https://api.zeeoneofc.my.id) yang kedua itu dari Qyuunee (https://api.koi.pics),
+> **Note**: Saya menggunakan 2 api key yang pertama itu dari Zeeone (https://api.zeeoneofc.my.id) yang kedua itu dari Qyuunee (https://api.koi.pics),dan 
+script ini adalah Modifikasi dari script [example case](https://github.com/zeeoneofficial/example-case) dari [Zeeone](https://github.com/zeeoneofficial)
 --------
 ## CARA PASANG APIKEY
 1. Pastikan kamu sudah memiliki akun di website [Api Zeeoneofc](https://api.zeeoneofc.my.id/users/login) dan akun di website [Api Qyuune](https://api.qyuunee.my.id/login)
@@ -38,9 +39,7 @@ global.APIKeys = {
 ```
 
 --------
-## NOTED
-- script ini adalah Modifikasi dari script [example case](https://github.com/zeeoneofficial/example-case) dari Zeeone
---------
+
 ## Terimakasih kepada
 - Pengguna script ini
 - Penyedia package
