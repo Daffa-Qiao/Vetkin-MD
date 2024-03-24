@@ -5,7 +5,7 @@
 <img src="./image/hd.jpg" alt="ALPHA" width="200"/>
 </p>
 
-> **Note**: Saya menggunakan 2 api key yang pertama itu dari Zeeone (https://api.zeeoneofc.my.id) yang kedua itu dari Qyuunee (https://api.koi.pics),dan 
+> **Note**: Saya menggunakan 2 api key yang pertama itu dari Zeeone (https://api.zeeoneofc.my.id) yang kedua itu dari Qyuunee (https://api.koi.pics), dan 
 script ini adalah Modifikasi dari script [example case](https://github.com/zeeoneofficial/example-case) dari [Zeeone](https://github.com/zeeoneofficial)
 --------
 ## CARA PASANG APIKEY
@@ -24,6 +24,27 @@ global.APIKeys = {
 	'https://api.zeeoneofc.my.id': 'Your Key',
 	'https://api.koi.pics':'Your Key',
 }
+```
+
+## CARA MENGGANTI CARA LOGIN
+1. Pergi ke file `alpha.js`
+2. Cari
+3. Ganti `Your Key` di file `settings.js` dengan apikey kamu.
+```ts
+//jika ingin menggunakan pairing code falsenya di ganti true
+const pairingCode = false
+
+//ingin menggunakan pairing code true di ganti menjadi !pairingcode
+const alpha = WADefault({
+        version,
+        logger: pino({ level: "fatal" }).child({ level: "fatal" }),
+        printQRInTerminal: true,//!pairingCode
+        mobile: useMobile, 
+        browser: ['Chrome (Linux)', '', ''],
+        auth: {
+         creds: state.creds,
+         keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
+      },})
 ```
 
 > **Warning**: Jika mengganti link REST-API menjadi yang lain maka akan mengganti fitur botnya
