@@ -28,8 +28,8 @@ global.APIKeys = {
 
 ## CARA MENGGANTI CARA LOGIN
 1. Pergi ke file `alpha.js`
-2. Cari
-3. Ganti `Your Key` di file `settings.js` dengan apikey kamu.
+2. Search `pairingCode` dengan shorcut ctrl+f
+3. Ganti `pairingCode = false` di file `alpha.js` menjadi `true`.
 ```ts
 //jika ingin menggunakan pairing code falsenya di ganti true
 const pairingCode = false
